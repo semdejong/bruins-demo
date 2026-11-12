@@ -63,19 +63,26 @@ export const content = {
   hero: {
     title: "Is uw woning toe aan een opfrisbeurt?",
     subtitle:
-      "De schilders van Bruins Schilderwerken uit Rijssen staan klaar voor uw binnen- en buitenschilderwerk, behangwerk of wandafwerking. Wij adviseren u graag over het gebruik van kleur en materialen.",
+      "De schilders van Bruins Schilderwerken uit Rijssen staan klaar voor uw binnenschilderwerk, behangwerk of wandafwerking. Kies eens voor nieuwe kleuren, met als resultaat een opgefriste woonkamer, keuken of slaapkamer. Wij adviseren u graag over het gebruik van kleur en materialen.",
     primaryCta: { label: "Bel 06-36 12 44 88", href: "tel:+31636124488" },
     secondaryCta: { label: "Offerte", href: "/offerte" },
     image: "/img/bussen.png",
     highlights: ["25 jaar ervaring", "Familiebedrijf uit Rijssen", "Binnen, buiten, glas en behang"],
   },
 
-  facts: [
-    "Rijssen",
-    "25 jaar ervaring",
-    "Familiebedrijf",
-    "Binnen, buiten en onderhoud",
-    "Glas en behang",
+  facts: ["Rijssen", "25 jaar ervaring", "Binnen, buiten en onderhoud", "Glas en behang"],
+
+  advice: "Wij adviseren u graag over het gebruik van kleur en materialen.",
+  glassTypes: ["Enkelglas", "Meervoudig isolatieglas", "Figuurglas", "Glas in lood", "HR++"],
+  onderhoud:
+    "U kunt bij ons terecht voor binnen-, buiten- en onderhoudsschilderwerk. En uiteraard ook voor al uw glas- en behangwerk.",
+  schilderHook: "Bij nieuwbouw, onderhoud of renovatie bent u bij ons aan het juiste adres.",
+  behangHook: "Uw kamer voorzien van een nieuw behang? Wij helpen u graag.",
+  featured: [
+    "keimwerk",
+    "monumentale-boerderij",
+    "muurverf-spuitwerk",
+    "250m2-fotobehang-plakken",
   ],
 
   layers: [
@@ -87,13 +94,16 @@ export const content = {
 
   services: {
     title: "Wat wij doen",
-    intro: "Mogelijk kunnen wij u hier mee helpen.",
+    intro:
+      "Schilderwerk, glaswerk, behangwerk en spuitwerk — voor particulieren, bedrijven en gemeentelijke instellingen.",
     items: [
       {
         slug: "schilderwerk",
         title: "Schilderwerk",
         href: "/schilderwerk",
         icon: "",
+        short:
+          "Binnen, buiten en onderhoud, voor particulieren, bedrijven en gemeentelijke instellingen.",
         text: "Wij beschikken over gedegen vakmanschap en leveren kwalitatief hoogstaand schilderwerk aan particulieren, bedrijven en gemeentelijke instellingen. Bij nieuwbouw, onderhoud of renovatie bent u bij ons aan het juiste adres. U kunt bij ons terecht voor binnen-, buiten- en onderhoudsschilderwerk.",
       },
       {
@@ -101,6 +111,7 @@ export const content = {
         title: "Glaswerk",
         href: "/glaswerk",
         icon: "",
+        short: "Van enkelglas tot en met HR++, ook figuurglas en glas in lood.",
         text: "Rekening houdend met uw wensen komen wij met een passende en zo voordelig mogelijke oplossing voor uw glaswerk. Wij leveren alle glassoorten van normaal enkelglas tot en met het best isolerende HR++. Onder beglazing verstaan wij het plaatsen van meervoudig isolatieglas, enkelglas, figuurglas en glas in lood.",
       },
       {
@@ -108,14 +119,16 @@ export const content = {
         title: "Behangwerk",
         href: "/behangwerk",
         icon: "",
-        text: "Met het plakken van diverse soorten behang hebben wij ook ruime ervaring. Daarnaast kunnen we overweg met glasweefsel (ook wel glasvlies genoemd).",
+        short: "Diverse soorten behang, ook glasweefsel (glasvlies).",
+        text: "Met het plakken van diverse soorten behang hebben wij ook ruime ervaring. Daarnaast kunnen wij overweg met glasweefsel (ook wel glasvlies genoemd).",
       },
       {
         slug: "spuitwerk",
         title: "Spuitwerk",
         href: "/spuitwerk",
         icon: "",
-        text: "Het opspuiten van muurverf geeft een mooier, egaler resultaat dan rollen. Juist wanneer wanden en plafonds mooi glad zijn gestuct, zou het zonde zijn als dit teniet wordt gedaan door de structuur van een roller.",
+        short: "Wanden en plafonds egaler en strakker dan met de roller.",
+        text: "Het opspuiten van muurverf geeft een mooier, egaler resultaat dan rollen. Het rollen laat altijd een structuur na, terwijl u daar bij opspuiten geen last van hebt. Juist wanneer wanden en plafonds mooi glad zijn gestuct, zou het zonde zijn als dit teniet wordt gedaan door de structuur van een roller. Door de muurverf te spuiten krijgt u gladde, egale en strakke wanden en plafonds. Bovendien neemt het minder tijd in beslag.",
       },
     ],
   },
@@ -188,7 +201,7 @@ export const content = {
       summary:
         "Nieuwbouwwoning van Westerhof Bouw, voorzien van keimwerk — de woning kreeg een compleet andere uitstraling.",
       text: [
-        "Deze nieuwbouwwoning van Westerhof Bouw hebben we voorzien van prachtig keimwerk.",
+        "Deze nieuwbouwwoning van Westerhof Bouw hebben wij voorzien van prachtig keimwerk.",
         "De woning kreeg met het gebruik van dit product een compleet andere uitstraling.",
       ],
     },
@@ -249,8 +262,8 @@ export const content = {
       summary:
         "Muurverf gespoten in plaats van gerold: een gladder, egaler resultaat op wanden en plafonds.",
       text: [
-        "Voor een klant van ons hebben we gebruik gemaakt van spuitwerk.",
-        "Het opspuiten van muurverf geeft een mooier resultaat dan met de verfroller “rollen”. Het rollen laat altijd een structuur na, terwijl je daar bij opspuiten geen last van hebt. Juist wanneer wanden en plafonds mooi glad zijn gestuct, zou het zonde zijn als dit teniet wordt gedaan door de nadelen van het rollen. Door de muurverf te spuiten krijg je gladde, egale en strakke wanden én plafonds. Bovendien neemt het minder tijd in beslag.",
+        "Voor een klant van ons hebben wij gebruik gemaakt van spuitwerk.",
+        "Het opspuiten van muurverf geeft een mooier resultaat dan met de verfroller rollen. Het rollen laat altijd een structuur na, terwijl u daar bij opspuiten geen last van hebt. Juist wanneer wanden en plafonds mooi glad zijn gestuct, zou het zonde zijn als dit teniet wordt gedaan door de nadelen van het rollen. Door de muurverf te spuiten krijgt u gladde, egale en strakke wanden en plafonds. Bovendien neemt het minder tijd in beslag.",
       ],
     },
     {
@@ -269,7 +282,7 @@ export const content = {
       summary:
         "Kantoor van Akor Rijssen in Enschede: muren, kabelgoten en wanden gespoten voor een strak resultaat.",
       text: [
-        "Is uw kantoorruimte toe aan een opknapbeurt? En zijn de muren, kabelgoten en wanden vies en geel geworden.",
+        "Is uw kantoorruimte toe aan een opknapbeurt? En zijn de muren, kabelgoten en wanden vies en geel geworden?",
         "Wij spuiten dit alles voor u voor een strak en net resultaat.",
       ],
     },
@@ -306,7 +319,7 @@ export const content = {
       summary: "Buiten houtwerk van een tuinhuis beschermd met olie, zodat de houtnerf zichtbaar blijft.",
       text: [
         "Het is weer tijd om het buiten houtwerk te beschermen.",
-        "Bij dit project hebben we gekozen om het tuinhout te beschermen met een olie, hierdoor blijft de houtnerf zichtbaar.",
+        "Bij dit project hebben wij gekozen om het tuinhout te beschermen met een olie. Hierdoor blijft de houtnerf zichtbaar.",
       ],
     },
     {
@@ -351,8 +364,9 @@ export const content = {
 
   contact: {
     title: "Contact",
-    text: "Bel, mail of vraag een vrijblijvende offerte aan. Voor gericht advies komen wij graag bij u langs.",
-    phoneDisplay: "06 - 36 12 44 88",
+    text: "Bel of mail ons, of vraag een offerte aan.",
+    mailSubject: "Bericht via website",
+    phoneDisplay: "06-36 12 44 88",
     phoneTel: "+31636124488",
     email: "info@bruinsschilderwerken.nl",
     address: "Kryptonstraat 39b-09",
@@ -360,7 +374,7 @@ export const content = {
     city: "Rijssen",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Kryptonstraat+39b-09%2C+7463+PB+Rijssen",
-    phone: "06 - 36 12 44 88",
+    phone: "06-36 12 44 88",
     openingHours: [] as string[],
     whatsapp: "",
     cta: { label: "Bel 06-36 12 44 88", href: "tel:+31636124488" },
@@ -371,7 +385,7 @@ export const content = {
   offerte: {
     title: "Offerte aanvragen",
     intro:
-      "Dit is een concept: uw eigen mailprogramma opent met het bericht ingevuld. Er wordt niets automatisch verstuurd.",
+      "Dit is een concept; uw eigen mailprogramma opent met het bericht. Er wordt niets automatisch verstuurd.",
     subject: "Offerteaanvraag via website",
     greeting: "Goedendag,",
     workOptions: [
@@ -385,10 +399,25 @@ export const content = {
     ],
   },
 
+  privacy: {
+    title: "Privacy",
+    paragraphs: [
+      "Bruins Schilderwerken, Kryptonstraat 39b-09, 7463 PB Rijssen. E-mail: info@bruinsschilderwerken.nl.",
+      "Deze website is een concept van Sleads. Het is een demonstratie en geen live administratie van het schildersbedrijf.",
+      "Het concept gebruikt alleen een cookieloos meetscript van Sleads. Dat script plaatst geen trackingcookies. Formulieren op deze site worden niet opgeslagen: uw mailprogramma opent met het bericht, en er wordt niets automatisch verstuurd.",
+      "Een video over spuitwerk verwijst naar YouTube en speelt hier niet vanzelf af.",
+      "Voor vragen over deze pagina mailt u naar info@bruinsschilderwerken.nl.",
+    ],
+  },
+
   footer: {
     kvk: "",
     socials: [] as { label: string; href: string }[],
   },
 };
+
+export function getProject(slug: string) {
+  return content.projects.find((project) => project.slug === slug);
+}
 
 export type Content = typeof content;

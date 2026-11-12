@@ -4,11 +4,11 @@ export default function SleadsBadge() {
     <a
       href="https://sleads.nl"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
       aria-label="Concept door Sleads – bekijk sleads.nl"
-      className="fixed bottom-3 left-3 z-50 inline-flex items-center gap-1.5 rounded-full border border-black/10 bg-white/85 px-3 py-1.5 text-[11px] font-medium text-neutral-700 shadow-sm backdrop-blur transition hover:bg-white hover:text-black sm:bottom-4 sm:left-4 sm:text-xs print:hidden"
+      className="fixed bottom-[5.25rem] left-3 z-50 inline-flex min-h-11 items-center gap-2 rounded-[2px] border border-inkt/15 bg-wit px-3 text-[11px] font-medium text-inkt min-[1100px]:bottom-4 min-[1100px]:left-4 sm:text-xs print:hidden"
     >
-      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+      <span className="h-[3px] w-3 bg-cyaan" aria-hidden />
       Concept door <span className="font-semibold">Sleads</span>
     </a>
   );

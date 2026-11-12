@@ -1,26 +1,145 @@
 @import "tailwindcss";
 
 :root {
-  --brand: #1d4ed8;
-  --brand-fg: #ffffff;
-  --accent: #f59e0b;
-  --background: #ffffff;
-  --foreground: #0f172a;
-  --muted: #f1f5f9;
+  --inkt: #102930;
+  --papier: #f6f4ef;
+  --vlak: #efece6;
+  --wit: #ffffff;
+  --cyaan: #00aeef;
+  --link: #0a6e8f;
+  --magenta: #eb008c;
+  --magenta-tekst: #a40062;
+  --groen: #62b040;
+  --brand: var(--cyaan);
+  --brand-fg: var(--wit);
+  --accent: var(--magenta);
+  --background: var(--papier);
+  --foreground: var(--inkt);
+  --muted: var(--vlak);
 }
 
 @theme inline {
+  --color-inkt: var(--inkt);
+  --color-papier: var(--papier);
+  --color-vlak: var(--vlak);
+  --color-wit: var(--wit);
+  --color-cyaan: var(--cyaan);
+  --color-link: var(--link);
+  --color-magenta: var(--magenta);
+  --color-magenta-tekst: var(--magenta-tekst);
+  --color-groen: var(--groen);
   --color-brand: var(--brand);
   --color-brand-fg: var(--brand-fg);
   --color-accent: var(--accent);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-besley), Palatino, "Palatino Linotype", serif;
+  --font-mono: var(--font-spline), ui-monospace, monospace;
+}
+
+html {
+  scroll-padding-top: 5.5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--papier);
+  color: var(--inkt);
   font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  overflow-x: clip;
+}
+
+@media (min-width: 64rem) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+.font-mono {
+  font-weight: 500;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--inkt);
+  outline-offset: 2px;
+}
+
+.on-ink :focus-visible,
+footer :focus-visible {
+  outline-color: var(--papier);
+}
+
+::selection {
+  background: var(--inkt);
+  color: var(--papier);
+}
+
+button,
+input,
+textarea {
+  border-radius: 0;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  border: 1px solid var(--inkt);
+  background: var(--wit);
+  padding: 0.55rem 0.75rem;
+  font: inherit;
+  color: inherit;
+}
+
+textarea.field {
+  min-height: 8.5rem;
+  resize: vertical;
+}
+
+.label-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .coat-draw {
+    transform-box: fill-box;
+    transform-origin: left center;
+    animation: coat-draw 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .rise {
+    animation: rise 0.45s ease both;
+  }
+}
+
+@keyframes coat-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
