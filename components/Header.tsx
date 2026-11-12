@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import LayerRule from "@/components/LayerRule";
 import HonestImage from "@/components/HonestImage";
+import SleadsBadge from "@/components/SleadsBadge";
 
 function Caret({ open }: { open: boolean }) {
   return (
@@ -67,6 +68,11 @@ export default function Header() {
 
   return (
     <header data-section="header" className="sticky top-0 z-40 bg-papier">
+      <div className="border-b border-inkt/15">
+        <div className="mx-auto flex max-w-6xl justify-end px-4 min-[1100px]:px-6">
+          <SleadsBadge />
+        </div>
+      </div>
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 min-[1100px]:gap-5 min-[1100px]:px-6">
         <Link href="/" className="shrink-0">
           <HonestImage

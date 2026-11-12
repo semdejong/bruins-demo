@@ -19,7 +19,7 @@ const thickness: Record<string, number> = {
 /** Enige plek waar de vier laagnamen voluit staan. */
 export default function LayerLegend() {
   return (
-    <ol className="mt-10 max-w-md" aria-label="Opbouw van een verflaag, van aflak naar ondergrond">
+    <ol className="mt-6 max-w-md lg:mt-10" aria-label="Opbouw van een verflaag, van aflak naar ondergrond">
       {visual.map((layer, index) => {
         const h = thickness[layer.nr] ?? 3;
         return (

@@ -16,7 +16,7 @@ export default function OffertePage() {
         <p className="mt-5 max-w-2xl">{content.offerte.aside}</p>
       </header>
       <div data-section="offerte" className="mx-auto grid max-w-6xl gap-12 px-5 pb-16 lg:grid-cols-12">
-        <aside className="lg:col-span-4">
+        <aside className="lg:sticky lg:top-36 lg:col-span-4 lg:self-start">
           <p className="font-display text-3xl">{content.company.name}</p>
           <p className="mt-4">
             <a href={`tel:${content.contact.phoneTel}`} data-cta="bellen" className="text-link underline underline-offset-2">

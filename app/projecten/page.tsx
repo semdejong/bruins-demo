@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import LayerRule from "@/components/LayerRule";
 import ProjectGallery from "@/components/ProjectGallery";
 import ProjectRegister from "@/components/ProjectRegister";
 
@@ -17,10 +18,11 @@ export default function ProjectenPage() {
           Negen projecten, van keimwerk en behang tot spuitwerk en houtbescherming.
         </p>
       </header>
-      <div className="mx-auto max-w-6xl px-5 pb-8">
+      <div className="mx-auto max-w-6xl px-5 pb-10">
         <ProjectRegister />
       </div>
-      <div data-section="projectgalerij" className="mx-auto max-w-6xl px-5 pb-16">
+      <LayerRule />
+      <div data-section="projectgalerij" className="mx-auto max-w-6xl px-5 py-10 pb-16">
         <ProjectGallery />
       </div>
     </article>

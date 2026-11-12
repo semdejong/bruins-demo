@@ -21,7 +21,7 @@ export default function ProjectGallery() {
           return (
             <li
               key={project.slug}
-              className="grid items-center gap-6 border-t border-inkt/15 py-8 md:grid-cols-2 md:py-10"
+              className="grid items-start gap-6 border-t border-inkt/15 py-8 md:grid-cols-2 md:py-10"
             >
               <button
                 type="button"
@@ -29,7 +29,7 @@ export default function ProjectGallery() {
                 onClick={() => setOpen({ slug: project.slug, index: 0 })}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={cover.src} alt={cover.alt} width={705} height={550} className="h-auto w-full" />
+                <img src={cover.src} alt={cover.alt} width={705} height={550} className="h-auto w-full" style={{ maxWidth: 705 }} />
                 <span className="mt-2 block font-mono text-[0.72rem] tracking-wide text-link">Vergroot foto</span>
               </button>
               <div className={index % 2 ? "md:order-1" : ""}>

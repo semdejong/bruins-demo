@@ -63,9 +63,12 @@ export default function OverOnsPage() {
 
       <section data-section="reviews" className="mx-auto max-w-6xl px-5 py-16">
         <h2 className="font-display text-4xl">{content.reviews.title}</h2>
-        <ul className="mt-8 grid gap-8 md:grid-cols-2">
-          {content.reviews.items.map((quote) => (
-            <li key={quote.name}>
+        <ul className="mt-8 grid gap-x-8 gap-y-10 md:grid-cols-2">
+          {content.reviews.items.map((quote, index) => (
+            <li
+              key={quote.name}
+              className={index === content.reviews.items.length - 1 ? "md:col-span-2 md:max-w-xl" : undefined}
+            >
               <figure className="border-t-2 border-inkt pt-4">
                 <blockquote className="font-display text-[1.45rem] leading-snug">{quote.text}</blockquote>
                 <figcaption className="mt-4 font-mono text-[0.75rem] tracking-wide">{quote.name}</figcaption>

@@ -44,7 +44,7 @@ export default function SchilderwerkPage() {
           {content.voice.audiences.map((audience, index) => (
             <li key={audience} className="border-t border-inkt/15">
               <span aria-hidden="true" className={`block ${["h-[5px] bg-inkt", "h-[4px] bg-cyaan", "h-[3px] bg-magenta"][index]}`} />
-              <p className="px-5 py-6 font-display text-2xl">{audience}</p>
+              <p className="px-5 py-6 font-display text-xl leading-tight sm:text-[1.45rem]">{audience}</p>
             </li>
           ))}
         </ul>

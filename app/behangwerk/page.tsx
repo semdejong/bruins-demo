@@ -24,16 +24,18 @@ export default function BehangwerkPage() {
       </header>
 
       <section className="bg-vlak">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 lg:grid-cols-2">
-          <div className="border-t-[5px] border-inkt pt-6">
-            <h2 className="font-display text-3xl">Diverse soorten behang</h2>
+        <div className="mx-auto grid max-w-6xl items-start gap-x-12 gap-y-10 px-5 py-14 lg:grid-cols-2">
+          <div>
+            <span aria-hidden="true" className="block h-[5px] w-full bg-inkt" />
+            <h2 className="mt-6 font-display text-3xl">Diverse soorten behang</h2>
             <p className="mt-4">
               Met het plakken van diverse soorten behang hebben wij ruime ervaring. In opdracht van onze partner
               Fotowand.nl plakten wij 250m2 fotobehang in Oosterhout.
             </p>
           </div>
-          <div className="border-t-[3px] border-magenta pt-6">
-            <h2 className="font-display text-3xl">Glasweefsel</h2>
+          <div>
+            <span aria-hidden="true" className="block h-[3px] w-full bg-magenta" />
+            <h2 className="mt-6 font-display text-3xl">Glasweefsel</h2>
             <p className="mt-4">
               Daarnaast kunnen wij overweg met glasweefsel, ook wel glasvlies genoemd.
             </p>

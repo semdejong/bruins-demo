@@ -55,7 +55,7 @@ export default function ContactForm() {
         </label>
       </div>
       <label className="flex min-h-11 items-start gap-3">
-        <input type="checkbox" name="privacy" required className="mt-1 size-5 accent-inkt" />
+        <input type="checkbox" name="privacy" required className="mt-1 size-5 shrink-0 accent-inkt" />
         <span>
           Ik heb de{" "}
           <Link href="/privacy" className="text-link underline underline-offset-2">

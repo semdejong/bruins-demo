@@ -88,7 +88,7 @@ export default function OfferteForm() {
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
           {offerte.workOptions.map((option) => (
             <label key={option} className="flex min-h-11 items-center gap-3 border border-inkt bg-wit px-3">
-              <input type="checkbox" name="werkzaamheden" value={option} className="size-5 accent-inkt" />
+              <input type="checkbox" name="werkzaamheden" value={option} className="size-5 shrink-0 accent-inkt" />
               <span>{option}</span>
             </label>
           ))}
@@ -101,7 +101,7 @@ export default function OfferteForm() {
       </label>
 
       <label className="flex min-h-11 items-start gap-3">
-        <input type="checkbox" name="privacy" required className="mt-1 size-5 accent-inkt" />
+        <input type="checkbox" name="privacy" required className="mt-1 size-5 shrink-0 accent-inkt" />
         <span>
           Ik heb de{" "}
           <Link href="/privacy" className="text-link underline underline-offset-2">

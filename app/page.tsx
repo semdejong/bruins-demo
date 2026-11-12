@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <section data-section="hero" className="bg-papier">
-        <div className="mx-auto grid max-w-6xl items-start gap-12 px-5 py-14 lg:grid-cols-12 lg:py-20">
+        <div className="mx-auto grid max-w-6xl items-start gap-10 px-5 py-8 lg:grid-cols-12 lg:gap-12 lg:py-20">
           <div className="lg:col-span-7">
             <p className="font-mono text-[0.82rem] text-link">{content.about.kicker}</p>
             <h1 className="mt-4 max-w-3xl font-display text-[2.6rem] leading-[1.05] sm:text-6xl">{content.hero.title}</h1>
@@ -49,7 +49,7 @@ export default function Home() {
       <LayerRule />
 
       <section data-section="feiten" className="bg-wit">
-        <ul className="mx-auto grid max-w-6xl gap-6 px-5 py-8 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mx-auto flex max-w-6xl flex-wrap gap-x-12 gap-y-3 px-5 py-8">
           {content.facts.map((fact) => (
             <li key={fact} className="font-display text-[1.35rem] leading-snug">
               {fact}
@@ -64,7 +64,7 @@ export default function Home() {
             <h2 className="font-display text-4xl leading-tight sm:text-5xl">{content.voice.voorAlUwSchilderwerk}</h2>
             <p className="mt-4">{content.voice.dynamisch}</p>
           </div>
-          <ul className="lg:col-span-7 lg:pt-2">
+          <ul className="border-b border-inkt lg:col-span-7 lg:self-end">
             {content.voice.audiences.map((audience) => (
               <li key={audience} className="border-t border-inkt py-4 font-display text-2xl">
                 {audience}
@@ -91,7 +91,7 @@ export default function Home() {
           {featured.map((project, index) => {
             const cover = projectFrames(project)[0];
             return (
-              <li key={project.slug} className="grid items-center gap-6 border-t border-inkt/15 py-8 md:grid-cols-2">
+              <li key={project.slug} className="grid items-start gap-6 border-t border-inkt/15 py-8 md:grid-cols-2">
                 <Link href={`/projecten/${project.slug}`} className={index % 2 ? "md:order-2" : ""}>
                   <HonestImage src={cover.src} alt={cover.alt} width={705} height={550} maxWidth={520} />
                 </Link>

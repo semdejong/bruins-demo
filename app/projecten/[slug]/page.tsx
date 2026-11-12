@@ -78,7 +78,7 @@ async function ProjectBody({ params }: { params: Promise<{ slug: string }> }) {
           </Link>
         </p>
         <h1 className="mt-3 max-w-3xl font-display text-[2.4rem] leading-[1.08] text-balance sm:text-5xl">{project.title}</h1>
-        <dl className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-4 border-t border-inkt/15 pt-4">
           <div>
             <dt className="label-mono">Plaats</dt>
             <dd className="mt-1">{project.place}</dd>
