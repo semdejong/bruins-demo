@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProjectGallery from "@/components/ProjectGallery";
+import ProjectRegister from "@/components/ProjectRegister";
 
 export const metadata: Metadata = {
   title: "Projecten",
@@ -16,6 +17,9 @@ export default function ProjectenPage() {
           Negen projecten, van keimwerk en behang tot spuitwerk en houtbescherming.
         </p>
       </header>
+      <div className="mx-auto max-w-6xl px-5 pb-8">
+        <ProjectRegister />
+      </div>
       <div data-section="projectgalerij" className="mx-auto max-w-6xl px-5 pb-16">
         <ProjectGallery />
       </div>

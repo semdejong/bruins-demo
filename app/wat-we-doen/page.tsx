@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CoatStack from "@/components/CoatStack";
 import CtaPair from "@/components/CtaPair";
 import LayerRule from "@/components/LayerRule";
+import ProjectRegister from "@/components/ProjectRegister";
 import { content } from "@/content";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function WatWeDoenPage() {
       <header data-section="pagina" className="mx-auto max-w-6xl px-5 pb-8 pt-12 sm:pt-16">
         <h1 className="max-w-3xl font-display text-[2.5rem] leading-[1.08] sm:text-5xl">{content.services.title}</h1>
         <p className="mt-5 max-w-2xl">{content.services.intro}</p>
+        <p className="mt-4 max-w-2xl">{content.voice.dynamisch} {content.voice.binnen}</p>
       </header>
       <CoatStack full />
       <section className="bg-papier">
@@ -27,9 +29,17 @@ export default function WatWeDoenPage() {
           </div>
           <div>
             <h2 className="font-display text-3xl">Kleur en materiaal</h2>
+            <p className="mt-4">{content.voice.kleuren}</p>
             <p className="mt-4">{content.advice}</p>
             <h2 className="mt-10 font-display text-3xl">{content.about.regionTitle}</h2>
             <p className="mt-4">{content.about.region}</p>
+          </div>
+        </div>
+        <div className="mx-auto max-w-6xl px-5 pb-4">
+          <h2 className="font-display text-3xl">Projecten op een rij</h2>
+          <p className="mt-4 max-w-2xl">Negen uitgevoerde werken, van Aalten tot Oosterhout.</p>
+          <div className="mt-6">
+            <ProjectRegister />
           </div>
         </div>
         <div className="mx-auto max-w-6xl px-5 pb-16">

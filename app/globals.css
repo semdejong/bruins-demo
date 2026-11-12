@@ -43,6 +43,13 @@ html {
   scroll-padding-top: 5.5rem;
 }
 
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+
 body {
   background: var(--papier);
   color: var(--inkt);

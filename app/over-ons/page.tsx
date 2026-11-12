@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CtaPair from "@/components/CtaPair";
+import PlaceList from "@/components/PlaceList";
 import HonestImage from "@/components/HonestImage";
 import { content } from "@/content";
 
@@ -22,6 +23,18 @@ export default function OverOnsPage() {
               {paragraph}
             </p>
           ))}
+          <p className="mt-4">{content.voice.dynamisch}</p>
+          <ul className="mt-8 max-w-md">
+            {content.voice.werkwijze.map((item, index) => (
+              <li key={item} className="flex items-center gap-4 border-t border-inkt/15 py-3 last:border-b">
+                <span
+                  aria-hidden="true"
+                  className={`block w-16 shrink-0 ${["h-[5px] bg-inkt", "h-[4px] bg-cyaan", "h-[3px] bg-magenta", "h-[2px] bg-groen"][index]}`}
+                />
+                <span className="font-display text-2xl">{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
         <figure className="lg:col-span-5 lg:col-start-8">
           <HonestImage
@@ -40,6 +53,7 @@ export default function OverOnsPage() {
           <div>
             <h2 className="font-display text-3xl">{content.about.regionTitle}</h2>
             <p className="mt-4">{content.about.region}</p>
+            <PlaceList />
           </div>
           <div className="border-t-[3px] border-t-cyaan bg-inkt p-4">
             <HonestImage src={content.about.vans} alt={content.about.vansAlt} width={640} height={260} maxWidth={640} />

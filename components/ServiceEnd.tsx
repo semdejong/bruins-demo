@@ -32,6 +32,7 @@ export default function ServiceEnd({
                       {project.place} · {project.date}
                     </span>
                     <span className="mt-1 block font-display text-2xl">{project.title}</span>
+                    <span className="mt-2 block text-[1rem] leading-relaxed">{project.summary}</span>
                   </Link>
                 </li>
               );

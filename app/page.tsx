@@ -1,4 +1,5 @@
 import CoatStack from "@/components/CoatStack";
+import PlaceList from "@/components/PlaceList";
 import CtaPair from "@/components/CtaPair";
 import HonestImage from "@/components/HonestImage";
 import LayerLegend from "@/components/LayerLegend";
@@ -57,7 +58,23 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="bg-papier pt-14">
+      <section data-section="voor-wie" className="bg-papier">
+        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <h2 className="font-display text-4xl leading-tight sm:text-5xl">{content.voice.voorAlUwSchilderwerk}</h2>
+            <p className="mt-4">{content.voice.dynamisch}</p>
+          </div>
+          <ul className="lg:col-span-7 lg:pt-2">
+            {content.voice.audiences.map((audience) => (
+              <li key={audience} className="border-t border-inkt py-4 font-display text-2xl">
+                {audience}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="bg-papier pt-4">
         <div className="mx-auto max-w-6xl px-5 pb-8">
           <h2 className="font-display text-4xl sm:text-5xl">{content.services.title}</h2>
           <p className="mt-4 max-w-2xl">{content.services.intro}</p>
@@ -182,6 +199,7 @@ export default function Home() {
               </a>
             </p>
             <p className="mt-6 max-w-md text-[1rem]">{content.about.region}</p>
+            <PlaceList />
           </address>
         </div>
       </section>

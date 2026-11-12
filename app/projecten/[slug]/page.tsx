@@ -7,6 +7,32 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
+function ProjectNeighbours({ slug }: { slug: string }) {
+  const index = content.projects.findIndex((project) => project.slug === slug);
+  const previous = index > 0 ? content.projects[index - 1] : undefined;
+  const next = index >= 0 ? content.projects[index + 1] : undefined;
+  if (!previous && !next) return null;
+
+  return (
+    <nav aria-label="Andere projecten" className="mt-10 grid gap-4 border-t border-inkt/15 pt-6 sm:grid-cols-2">
+      {previous ? (
+        <Link href={`/projecten/${previous.slug}`} className="block min-h-11">
+          <span className="label-mono">Vorig project</span>
+          <span className="mt-1 block font-display text-xl">{previous.title}</span>
+        </Link>
+      ) : (
+        <span />
+      )}
+      {next ? (
+        <Link href={`/projecten/${next.slug}`} className="block min-h-11 sm:text-right">
+          <span className="label-mono">Volgend project</span>
+          <span className="mt-1 block font-display text-xl">{next.title}</span>
+        </Link>
+      ) : null}
+    </nav>
+  );
+}
+
 const workHref: Record<string, string> = {
   Schilderwerk: "/schilderwerk",
   Glaswerk: "/glaswerk",
@@ -108,6 +134,9 @@ async function ProjectBody({ params }: { params: Promise<{ slug: string }> }) {
         <div className="lg:col-span-7">
           <ProjectPhotos photos={frames} />
         </div>
+      </div>
+      <div className="mx-auto max-w-6xl px-5 pb-16">
+        <ProjectNeighbours slug={project.slug} />
       </div>
     </article>
   );

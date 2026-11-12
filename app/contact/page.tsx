@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import PlaceList from "@/components/PlaceList";
 import { content } from "@/content";
 import { ctaType } from "@/lib/cta";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -48,11 +50,32 @@ export default function ContactPage() {
             </a>
           </p>
           <p className="mt-6 max-w-md">{content.about.region}</p>
+          <PlaceList />
+          <p className="mt-6">
+            <Link href="/offerte" data-cta="offerte" className="text-link underline underline-offset-2">
+              Of vraag een offerte aan
+            </Link>
+          </p>
         </address>
         <div className="lg:col-span-7">
           <ContactForm />
         </div>
       </div>
+      <section data-section="diensten" className="border-t border-inkt/15">
+        <div className="mx-auto max-w-6xl px-5 py-12">
+          <h2 className="font-display text-3xl">Waar het over kan gaan</h2>
+          <ul className="mt-6">
+            {content.services.items.map((service) => (
+              <li key={service.slug} className="border-t border-inkt/15">
+                <Link href={service.href} className="grid gap-2 py-5 sm:grid-cols-[14rem_1fr] sm:items-baseline">
+                  <span className="font-display text-2xl">{service.title}</span>
+                  <span>{service.short}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </article>
   );
 }

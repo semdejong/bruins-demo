@@ -73,7 +73,53 @@ export const content = {
   facts: ["Rijssen", "25 jaar ervaring", "Binnen, buiten en onderhoud", "Glas en behang"],
 
   advice: "Wij adviseren u graag over het gebruik van kleur en materialen.",
-  glassTypes: ["Enkelglas", "Meervoudig isolatieglas", "Figuurglas", "Glas in lood", "HR++"],
+  voice: {
+    dynamisch: "Een dynamisch schildersbedrijf dat beschikt over gedegen vakmanschap.",
+    voorAlUwSchilderwerk: "Voor al uw schilderwerk.",
+    kleuren:
+      "Kies eens voor nieuwe, verrassende kleuren, met als resultaat een heerlijk opgefriste woonkamer, keuken of slaapkamer.",
+    binnen:
+      "De schilders van Bruins Schilderwerken uit Rijssen staan klaar om al uw binnenschilderwerk, behangwerk of wandafwerking in uw woning onder handen te nemen.",
+    kwaliteit: "Kwaliteit leveren is ons doel.",
+    audiences: ["Particulieren", "Bedrijven", "Gemeentelijke instellingen"],
+    werkwijze: ["Snel schakelen", "Persoonlijk contact", "Op tijd", "Nauwkeurig"],
+  },
+  glassTypes: [
+    {
+      title: "Enkelglas",
+      text: "Wij leveren normaal enkelglas.",
+    },
+    {
+      title: "Meervoudig isolatieglas",
+      text: "Onder beglazing verstaan wij het plaatsen van meervoudig isolatieglas.",
+    },
+    {
+      title: "Figuurglas",
+      text: "Onder beglazing verstaan wij het plaatsen van figuurglas.",
+    },
+    {
+      title: "Glas in lood",
+      text: "Onder beglazing verstaan wij het plaatsen van glas in lood.",
+    },
+    {
+      title: "HR++",
+      text: "Wij leveren alle glassoorten tot en met het best isolerende HR++.",
+    },
+  ],
+  schilderLagen: [
+    {
+      title: "Binnenschilderwerk",
+      text: "Binnenschilderwerk, behangwerk of wandafwerking in uw woning. Een woonkamer, keuken of slaapkamer kan daarmee weer fris worden. Wij adviseren u graag over kleur en materialen.",
+    },
+    {
+      title: "Buitenschilderwerk",
+      text: "Buitenschilderwerk hoort bij hetzelfde vak. Zo voorzagen wij een woning in Rijssen geheel aan de buitenkant van een nieuwe laklaag, en beschermden wij tuinhout met olie zodat de houtnerf zichtbaar blijft.",
+    },
+    {
+      title: "Onderhoudsschilderwerk",
+      text: "U kunt bij ons terecht voor binnen-, buiten- en onderhoudsschilderwerk. Het onderhoud van glas- en schilderwerken doen wij met de beste materialen en gereedschappen.",
+    },
+  ],
   onderhoud:
     "U kunt bij ons terecht voor binnen-, buiten- en onderhoudsschilderwerk. En uiteraard ook voor al uw glas- en behangwerk.",
   schilderHook: "Bij nieuwbouw, onderhoud of renovatie bent u bij ons aan het juiste adres.",
@@ -388,6 +434,8 @@ export const content = {
       "Dit is een concept; uw eigen mailprogramma opent met het bericht. Er wordt niets automatisch verstuurd.",
     subject: "Offerteaanvraag via website",
     greeting: "Goedendag,",
+    aside:
+      "Schrijf in het kort wat er moet gebeuren en waar. Binnen of buiten, onderhoud, glas, behang of spuitwerk: vink aan wat van toepassing is.",
     workOptions: [
       "Binnenschilderwerk",
       "Buitenschilderwerk",
